@@ -16,11 +16,11 @@
 	<tbody>
 		<tr>
 			<td>isalpha</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>isdigit</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>isalnum</td>
@@ -32,11 +32,11 @@
 		</tr>
 		<tr>
 			<td>isprint</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strlen</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>memset</td>
@@ -60,15 +60,15 @@
 		</tr>
     <tr>
 			<td>strlcat</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>toupper</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>tolower</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strchr</td>
@@ -92,7 +92,7 @@
 		</tr>
     <tr>
 			<td>atoi</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>calloc</td>
