@@ -76,7 +76,7 @@
 		</tr>
     <tr>
 			<td>strncmp</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>memchr</td>
