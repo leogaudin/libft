@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/05 13:26:13 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/10 18:32:24 by lgaudin          ###   ########.fr       */
+/*   Created: 2023/04/10 18:56:52 by lgaudin           #+#    #+#             */
+/*   Updated: 2023/04/10 18:58:49 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char *str)
+void	bzero(void *s, size_t n)
 {
-	while (*str)
+	size_t			count;
+	unsigned char	*pointer_copy;
+
+	count = 0;
+	pointer_copy = (unsigned char *)s;
+	while (count < n)
 	{
-		if (!((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z')
-				|| (*str >= '0' && *str <= '9')))
-			return (0);
-		str++;
+		pointer_copy[count++] = (unsigned char)'\0';
 	}
-	return (1);
+	return (s);
 }
