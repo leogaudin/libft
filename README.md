@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="https://img.shields.io/badge/norminette-passing-success"/>
+
 <h1>📊 Progression</h1>
 
 <h2>Fonctions libc</h2>
@@ -122,11 +124,11 @@
 	<tbody>
 		<tr>
 			<td>ft_substr</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_strjoin</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_strtrim</td>
