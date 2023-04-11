@@ -56,7 +56,7 @@
 		</tr>
     <tr>
 			<td>strlcpy</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strlcat</td>
@@ -72,7 +72,12 @@
 		</tr>
     <tr>
 			<td>strchr</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
+		</tr>
+    <tr>
+	<tr>
+			<td>strrchr</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strncmp</td>
@@ -80,15 +85,15 @@
 		</tr>
     <tr>
 			<td>memchr</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>memcmp</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strnstr</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>atoi</td>
@@ -96,11 +101,11 @@
 		</tr>
     <tr>
 			<td>calloc</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strdup</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 	</tbody>
 </table>
