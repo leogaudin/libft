@@ -24,11 +24,11 @@
 		</tr>
 		<tr>
 			<td>isalnum</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>isascii</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>isprint</td>
@@ -40,19 +40,19 @@
 		</tr>
     <tr>
 			<td>memset</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>bzero</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>memcpy</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>memmove</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>strlcpy</td>
