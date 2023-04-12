@@ -7,8 +7,6 @@
 
 <p><i>Les fonctions sont actuellement indiquées comme :white_check_mark: selon leur progression. <b>Elles ne sont pas encore passées par la moulinette et leur exactitude n'est pas garantie.</b></i></p>
 
-<h1>📊 Progression</h1>
-
 <h2>Fonctions libc</h2>
 
 <table>
