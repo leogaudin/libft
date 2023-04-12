@@ -6,13 +6,13 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 17:08:40 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 18:54:26 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 19:29:03 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-static int	ft_strlen(char *str)
+static int	ft_strlen(char const *str)
 {
 	int	count;
 
@@ -28,7 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 
 	i = 0;
-	if (ft_strlen(s + start) < len)
+	if ((size_t)ft_strlen(s + start) < len)
 			sub = malloc((ft_strlen(s + start) + 1) * sizeof(char));
 	else
 		sub = malloc((len + 1) * sizeof(char));
