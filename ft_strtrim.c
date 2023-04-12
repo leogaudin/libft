@@ -6,14 +6,24 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 17:22:30 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 16:30:13 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 19:22:03 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-static int	get_start(char const *s1, char const *set, int set_length)
+static int	ft_strlen(char *str)
+{
+	int	count;
+
+	count = 0;
+	while (str[count])
+		count++;
+	return (count);
+}
+
+static int	get_start(char const *s1, char const *set)
 {
 	int	i;
 	int	j;
@@ -31,14 +41,14 @@ static int	get_start(char const *s1, char const *set, int set_length)
 			}
 			j++;
 		}
-		if (j == set_length)
+		if (j == ft_strlen((char *)set))
 			return (i);
 		j = 0;
 	}
 	return (0);
 }
 
-static int	get_end(char const *s1, char const *set, int set_length)
+static int	get_end(char const *s1, char const *set)
 {
 	int	str_length;
 	int	j;
@@ -58,7 +68,7 @@ static int	get_end(char const *s1, char const *set, int set_length)
 			}
 			j++;
 		}
-		if (j == set_length)
+		if (j == ft_strlen((char *)set))
 			return (str_length);
 		j = 0;
 	}
@@ -70,16 +80,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		start;
 	int		end;
 	int		i;
-	int		set_length;
 	char	*trimmed;
 
-	set_length = 0;
-	while (set[set_length])
-		set_length++;
-	if (set_length == 0)
-		return ((char *)s1);
-	start = get_start(s1, set, set_length);
-	end = get_end(s1, set, set_length);
+	start = get_start(s1, set);
+	end = get_end(s1, set);
 	trimmed = malloc((end - start + 1) * sizeof(char));
 	i = 0;
 	if (!trimmed || (start == 0 && end == 0))
@@ -95,10 +99,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int main(void)
 // {
-// 	char string[] = "   .      .";
-// 	char set[] = "";
-// 	printf("Start of %s is %d\n", string, get_start(string, set, 0));
-// 	printf("End of %s is %d\n", string, get_end(string, set, 0));
+// 	char string[] = "       Salut ca va      ";
+// 	char set[] = " ";
+// 	printf("Start of %s is %d\n", string, get_start(string, set));
+// 	printf("End of %s is %d\n", string, get_end(string, set));
 // 	printf("Trimmed %s is %s\n", string, ft_strtrim(string, set));
 // 	return (0);
 // }
