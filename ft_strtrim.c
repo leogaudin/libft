@@ -6,14 +6,14 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 17:22:30 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 13:26:36 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 16:30:13 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int	get_start(char const *s1, char const *set, int set_length)
+static int	get_start(char const *s1, char const *set, int set_length)
 {
 	int	i;
 	int	j;
@@ -38,7 +38,7 @@ int	get_start(char const *s1, char const *set, int set_length)
 	return (0);
 }
 
-int	get_end(char const *s1, char const *set, int set_length)
+static int	get_end(char const *s1, char const *set, int set_length)
 {
 	int	str_length;
 	int	j;

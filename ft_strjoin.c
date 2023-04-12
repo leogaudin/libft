@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 17:10:28 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 11:55:56 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 16:29:46 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
  * @param    str  the string which length is asked
  * @return int    the length of the string
  */
-int	ft_strlen(char *str)
+static int	ft_strlen(char *str)
 {
 	int	count;
 
@@ -40,7 +40,7 @@ int	ft_strlen(char *str)
  * @param    src  the string to append
  * @return char*  a pointer to the last character of the result
  */
-char	*ft_strcat(char *dest, char *src)
+static char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
 	int	dest_size;
@@ -59,7 +59,7 @@ char	*ft_strcat(char *dest, char *src)
 	return (&dest[dest_size]);
 }
 
-char	*ft_strcpy(char *dest, char *src)
+static char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 

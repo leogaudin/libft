@@ -6,14 +6,14 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 13:30:01 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 13:25:18 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 16:29:21 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-// General ax compiler string length
+// General max compiler string length
 #define MAX 509
 
 /**
@@ -25,7 +25,7 @@
  * @param    charset the separators
  * @return   int     the number of strings
  */
-int	count_strings(char const *str, char c)
+static int	count_strings(char const *str, char c)
 {
 	int	strings_count;
 	int	is_char;
@@ -48,7 +48,7 @@ int	count_strings(char const *str, char c)
 	return (strings_count);
 }
 
-int	get_start(char const *s1, char c)
+static int	get_start(char const *s1, char c)
 {
 	int	i;
 
@@ -63,7 +63,7 @@ int	get_start(char const *s1, char c)
 	return (i);
 }
 
-int	get_end(char const *s1, char c)
+static int	get_end(char const *s1, char c)
 {
 	int	i;
 
@@ -82,7 +82,7 @@ int	get_end(char const *s1, char c)
 	return (i);
 }
 
-char	*ft_strtrim(char const *s1, char c)
+static char	*ft_strtrim(char const *s1, char c)
 {
 	int		start;
 	int		end;

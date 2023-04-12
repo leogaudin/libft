@@ -6,14 +6,14 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 11:30:31 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 11:54:44 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 16:28:26 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int	get_digits(int n)
+static int	get_digits(int n)
 {
 	int	count;
 
@@ -31,7 +31,7 @@ int	get_digits(int n)
 	return (count);
 }
 
-void	ft_rev_tab(char *tab, int size)
+static void	ft_rev_tab(char *tab, int size)
 {
 	int		i;
 	char	*array;

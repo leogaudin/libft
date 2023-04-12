@@ -6,13 +6,13 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 15:03:13 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 15:10:25 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 16:29:01 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_strlen(char *str)
+static int	ft_strlen(char *str)
 {
 	int	count;
 

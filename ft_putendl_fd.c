@@ -6,18 +6,18 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 15:07:31 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 15:10:20 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 16:28:47 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar_fd(char c, int fd)
+static void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
 
-int	ft_strlen(char *str)
+static int	ft_strlen(char *str)
 {
 	int	count;
 
@@ -27,7 +27,7 @@ int	ft_strlen(char *str)
 	return (count);
 }
 
-void	ft_putstr_fd(char *s, int fd)
+static void	ft_putstr_fd(char *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
 }
