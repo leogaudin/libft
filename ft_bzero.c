@@ -6,13 +6,13 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:56:52 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 17:00:53 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 19:44:33 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t			count;
 	unsigned char	*pointer_copy;

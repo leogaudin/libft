@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 16:50:27 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 19:39:54 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 19:44:29 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 
 int				ft_atoi(char *str);
-void			bzero(void *s, size_t n);
+void			ft_bzero(void *s, size_t n);
 void			*ft_calloc(size_t nelem, size_t elsize);
 int				ft_isalnum(char *str);
 int				ft_isalpha(char *str);
