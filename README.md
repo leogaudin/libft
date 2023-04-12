@@ -132,35 +132,35 @@
 		</tr>
 		<tr>
 			<td>ft_strtrim</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_split</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_itoa</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_strmapi</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_striteri</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_putstr_fd</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_putendl_fd</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_putnbr_fd</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 	</tbody>
 </table>
