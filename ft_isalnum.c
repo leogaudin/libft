@@ -6,11 +6,11 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:30:30 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/10 18:31:59 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 19:39:41 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char *str)
+int	ft_isalnum(char *str)
 {
 	while (*str)
 	{
