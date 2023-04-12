@@ -6,9 +6,11 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:59:19 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/11 15:42:47 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 17:01:05 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
