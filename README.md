@@ -3,6 +3,7 @@
 <div align="center">
 
 <img src="https://img.shields.io/badge/norminette-passing-success"/>
+<img src="https://img.shields.io/badge/libft--unit--tests-passing-success" />
 <img src="https://img.shields.io/badge/moulinette-unknown-important" />
 
 <p><i>Les fonctions sont actuellement indiquées comme :white_check_mark: selon leur progression. <b>Elles ne sont pas encore passées par la moulinette et leur exactitude n'est pas garantie.</b></i></p>
