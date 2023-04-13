@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 13:30:01 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/13 12:39:17 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 14:33:15 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,9 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		current_start;
 
-	result = malloc(sizeof(char *) * (count_strings(s, c) + 1));
-	if (!result)
+	if (!s || !(malloc(sizeof(char *) * (count_strings(s, c) + 1))))
 		return (0);
+	result = malloc(sizeof(char *) * (count_strings(s, c) + 1));
 	i = -1;
 	result_index = 0;
 	current_start = -1;

@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 15:03:13 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 16:29:01 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 14:29:19 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ static int	ft_strlen(char *str)
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s || !fd)
+		return ;
 	write(fd, s, ft_strlen(s));
 }
 

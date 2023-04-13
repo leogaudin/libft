@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 14:48:25 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 15:02:08 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 14:31:09 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 	char	*result;
 
+	if (!s || !f)
+		return (0);
 	i = 0;
 	while (s[i])
 		i++;
