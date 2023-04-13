@@ -6,14 +6,14 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 17:10:28 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 19:10:43 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 12:25:49 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-static int	ft_strlen(char *str)
+static int	ft_strlen(char const *str)
 {
 	int	count;
 
@@ -23,49 +23,40 @@ static int	ft_strlen(char *str)
 	return (count);
 }
 
-static char	*ft_strdup(char const *src)
-{
-	int		length;
-	char	*copy;
-
-	length = 0;
-	while (src[length])
-		length++;
-	copy = malloc(sizeof(char) * length + 1);
-	length = 0;
-	while (src[length])
-	{
-		copy[length] = src[length];
-		length++;
-	}
-	copy[length] = '\0';
-	return (copy);
-}
-
-static char	*ft_strcat(char *s1, char const *s2)
-{
-	int	i;
-
-	i = ft_strlen(s1);
-	while (*s2 != '\0')
-	{
-		s1[i] = *s2;
-		i++;
-		s2++;
-	}
-	s1[i] = '\0';
-	return (s1);
-}
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	char	*join;
+	int		i;
+	int		j;
+
 	if (!s1 || !s2)
 		return (0);
-	return (ft_strcat(ft_strdup(s1), s2));
+	join = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (!join)
+		return (0);
+	i = 0;
+	j = 0;
+	while (s1[i])
+	{
+		join[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+	{
+		join[i] = s2[j];
+		i++;
+		j++;
+	}
+	join[i] = '\0';
+	return (join);
 }
 
 // int	main(void)
 // {
-// 	printf("Output is %s\n", ft_strjoin("Salam", "aleykoume"));
+// 	char *s1 = "where is my ";
+// 	char *s2 = "malloc ???";
+
+// 	char *res = ft_strjoin(s2, s1);
+// 	printf("Output is %s\n", res);
 // 	return (0);
 // }

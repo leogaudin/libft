@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 15:56:03 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/11 16:33:25 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 12:15:56 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	s_pointer = (unsigned char *)s;
 	while (index < n)
 	{
-		if (s_pointer[index] == c)
-			return ((unsigned char *)&s_pointer[index]);
+		if (s_pointer[index] == (unsigned char)c)
+			return (&s_pointer[index]);
 		index++;
 	}
 	return (0);

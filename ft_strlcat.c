@@ -6,25 +6,27 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 12:16:32 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/03/19 11:54:45 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 12:26:02 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
-{
-	unsigned int	i;
-	unsigned int	dest_size;
-	unsigned int	src_size;
-	unsigned int	total_size;
+#include <unistd.h>
 
+size_t	ft_strlcat(char *dest, char *src, size_t size)
+{
+	size_t	i;
+	size_t	dest_size;
+	size_t	src_size;
+	size_t	total_size;
+
+	if (size == 0)
+		return (0);
 	dest_size = 0;
 	src_size = 0;
 	while (dest[dest_size])
 		dest_size++;
 	while (src[src_size])
 		src_size++;
-	if (size == 0)
-		return (src_size);
 	if (size <= dest_size)
 		return (src_size + size);
 	total_size = src_size + dest_size;

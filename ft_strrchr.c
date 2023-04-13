@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 15:56:03 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/11 16:20:28 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:29:41 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_strrchr(const char *s, int c)
 			index = i;
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)&s[i]);
 	if (index == 0 && s[0] != c)
 		return (0);
 	return ((char *)&s[index]);

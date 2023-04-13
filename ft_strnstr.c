@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 11:12:48 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/11 16:46:05 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 21:17:49 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	int	i;
 	int	j;
 
-	if (little[0] == '\0')
+	if (little[0] == '\0' || (len == 0 && !big))
 		return ((char *)big);
 	i = 0;
 	while (big[i] != '\0' && (size_t)i < len)

@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 16:12:22 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/11 17:06:41 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:47:25 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strdup(char *src)
 	while (src[length])
 		length++;
 	copy = malloc(sizeof(char) * length + 1);
+	if (!copy)
+		return (0);
 	length = 0;
 	while (src[length])
 	{
