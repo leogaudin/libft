@@ -179,39 +179,39 @@
 	<tbody>
 		<tr>
 			<td>ft_lstnew</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_lstadd_front</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_lstsize</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_lstlast</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 		<tr>
 			<td>ft_lstadd_back</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_lstdelone</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_lstclear</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_lstiter</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
     <tr>
 			<td>ft_lstmap</td>
-			<td>:x:</td>
+			<td>:white_check_mark:</td>
 		</tr>
 	</tbody>
 </table>
