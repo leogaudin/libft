@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 13:30:01 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 18:42:34 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/13 12:39:17 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,37 +42,20 @@ static int	count_strings(char const *str, char c)
 	return (strings_count);
 }
 
-static void	*ft_calloc(size_t nelem, size_t elsize)
-{
-	size_t			i;
-	unsigned char	*pointer;
-
-	if (nelem == 0 || elsize == 0)
-		return (0);
-	pointer = malloc(nelem * elsize);
-	i = 0;
-	while (i < (nelem * elsize))
-	{
-		pointer[i] = 0;
-		i++;
-	}
-	return (pointer);
-}
-
-static char	*cut_string(char const *s, int start, int end)
+static char	*cut_string(char const *s, int start, int end, char c)
 {
 	int		i;
 	char	*string;
 
 	i = 0;
-	string = ft_calloc((end - start + 1), sizeof(char));
+	string = malloc((end - start + 1) * sizeof(char));
 	while (start < end)
 	{
-		string[i] = s[start];
-		i++;
+		if (s[start] != c)
+			string[i++] = s[start];
 		start++;
 	}
-	string[i] = 0;
+	string[i] = '\0';
 	return (string);
 }
 
@@ -84,6 +67,8 @@ char	**ft_split(char const *s, char c)
 	int		current_start;
 
 	result = malloc(sizeof(char *) * (count_strings(s, c) + 1));
+	if (!result)
+		return (0);
 	i = -1;
 	result_index = 0;
 	current_start = -1;
@@ -91,12 +76,9 @@ char	**ft_split(char const *s, char c)
 	{
 		if (s[i] != c && current_start == -1)
 			current_start = i;
-		else if ((s[i] == c || s[i + 1] == 0) && current_start != -1)
+		if ((s[i] == c || s[i + 1] == 0) && current_start != -1)
 		{
-			if (s[i + 1] == 0)
-				result[result_index++] = cut_string(s, current_start, i + 1);
-			else
-				result[result_index++] = cut_string(s, current_start, i);
+			result[result_index++] = cut_string(s, current_start, i + 1, c);
 			current_start = -1;
 		}
 	}
@@ -106,7 +88,7 @@ char	**ft_split(char const *s, char c)
 
 // int main(void)
 // {
-// 	char *str = "Salut ca va";
+// 	char *str = "      split       this for   me  !   ";
 // 	char sep = ' ';
 // 	printf("There are %d strings in \"%s\"\n", count_strings(str, sep), str);
 // 	char **result = ft_split(str, sep);
