@@ -6,17 +6,11 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/05 13:55:19 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/03/19 11:52:38 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:24:19 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char *str)
+int	ft_isprint(int c)
 {
-	while (*str)
-	{
-		if (!(*str >= 32 && *str <= 126))
-			return (0);
-		str++;
-	}
-	return (1);
+	return (c >= 32 && c <= 126);
 }

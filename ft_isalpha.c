@@ -6,18 +6,11 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/05 13:26:13 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/10 18:32:24 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:26:16 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char *str)
+int	ft_isalpha(int c)
 {
-	while (*str)
-	{
-		if (!((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z')
-				|| (*str >= '0' && *str <= '9')))
-			return (0);
-		str++;
-	}
-	return (1);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

@@ -6,17 +6,12 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:30:30 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 19:39:41 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:26:51 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char *str)
+int	ft_isalnum(int c)
 {
-	while (*str)
-	{
-		if (!((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z')))
-			return (0);
-		str++;
-	}
-	return (1);
+	return ((c >= 'a' && c <= 'z')
+		|| (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'));
 }

@@ -6,17 +6,11 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/05 13:37:15 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/03/19 11:50:27 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:23:38 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char *str)
+int	ft_isdigit(int c)
 {
-	while (*str)
-	{
-		if (!(*str >= '0' && *str <= '9'))
-			return (0);
-		str++;
-	}
-	return (1);
+	return (c >= '0' && c <= '9');
 }

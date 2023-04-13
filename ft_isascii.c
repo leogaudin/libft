@@ -6,17 +6,11 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:32:42 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/10 18:34:45 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/12 20:25:45 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char *str)
+int	ft_isascii(int c)
 {
-	while (*str)
-	{
-		if (!(*str >= 0 && *str <= 127))
-			return (0);
-		str++;
-	}
-	return (1);
+	return (c >= 0 && c <= 127);
 }
