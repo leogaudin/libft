@@ -6,11 +6,13 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 15:56:58 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/03/19 11:48:37 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/14 15:51:23 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *str)
 {
 	int	count;
 
