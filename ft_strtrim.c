@@ -6,7 +6,7 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 17:22:30 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/12 21:05:39 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/04/14 16:22:14 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = get_end(s1, set);
 	trimmed = malloc((end - start + 1) * sizeof(char));
 	i = 0;
-	if (!trimmed || (start == 0 && end == 0))
+	if (!trimmed)
 		return (trimmed);
 	while (start < end)
 	{
@@ -100,7 +100,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int main(void)
 // {
-// 	char string[] = "";
+//     char string[] = "          ";
 // 	char set[] = " ";
 // 	printf("Start of %s is %d\n", string, get_start(string, set));
 // 	printf("End of %s is %d\n", string, get_end(string, set));
