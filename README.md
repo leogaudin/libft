@@ -7,7 +7,7 @@
 <a href="https://github.com/Tripouille/libftTester"><img src="https://img.shields.io/badge/libftTester-passing-success" /></a>
 <a href="https://github.com/alelievr/libft-unit-test"><img src="https://img.shields.io/badge/libft--unit--test-passing-success" /></a>
 <a href="https://github.com/xicodomingues/francinette"><img src="https://img.shields.io/badge/francinette--fsoares-passing-success" /></a>
-<img src="https://img.shields.io/badge/moulinette-unknown-important" />
+<img src="https://img.shields.io/badge/moulinette-passing-success" />
 
 <h2>Fonctions libc</h2>
 
