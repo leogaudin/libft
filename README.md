@@ -8,6 +8,8 @@
 <a href="https://github.com/alelievr/libft-unit-test"><img src="https://img.shields.io/badge/libft--unit--test-passing-success" /></a>
 <a href="https://github.com/xicodomingues/francinette"><img src="https://img.shields.io/badge/francinette--fsoares-passing-success" /></a>
 <img src="https://img.shields.io/badge/moulinette-125%2F100-success" />
+<br>
+<a href="https://wakatime.com/badge/user/db0e5671-cec5-4e7b-9d41-19a881e67f7d/project/565f10d0-07eb-4c9d-9ea6-66bd60ad8e28"><img src="https://wakatime.com/badge/user/db0e5671-cec5-4e7b-9d41-19a881e67f7d/project/565f10d0-07eb-4c9d-9ea6-66bd60ad8e28.svg" alt="wakatime"></a>
 
 <h2>Fonctions libc</h2>
 
