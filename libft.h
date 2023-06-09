@@ -6,15 +6,18 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 16:50:27 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/04/14 15:58:52 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/06/09 13:45:09 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdarg.h>
 # include <stdlib.h>
+# include <unistd.h>
 
+// Original libft
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t nelem, size_t elsize);
@@ -65,5 +68,38 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
+
+// get_next_line
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 50
+# endif
+int					get_nl_index(char *stash);
+char				*get_next_line(int fd);
+
+// ft_printf
+typedef struct s_flags
+{
+	int				minus;
+	int				zero;
+	int				width;
+	int				precision;
+	int				star;
+	int				plus;
+	int				hash;
+	int				space;
+}					t_flags;
+int					ft_printf(const char *format, ...);
+int					ft_print_char(int c);
+int					ft_print_string(char *str);
+int					ft_print_hexa(unsigned long long n, char c, t_flags *flags);
+int					ft_print_pointer(unsigned long long p, t_flags *flags);
+int					ft_print_int(int n, t_flags *flags);
+int					ft_print_unsigned(unsigned int n);
+int					ft_print_percent(void);
+int					ft_parser(const char *format, int *i, va_list *args);
+int					ft_intlen(long n);
+int					ft_parse_width(const char *format, int *i, t_flags *flags,
+						va_list *args);
+int					ft_print_padding(int width, int len, char c);
 
 #endif
