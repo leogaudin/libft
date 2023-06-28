@@ -33,7 +33,6 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 clean:
 	@$(RM) -r $(OBJ_DIR)
-	@echo "$(RED)obj files deleted.$(RESET)"
 
 fclean: clean
 	@$(RM) $(NAME)
