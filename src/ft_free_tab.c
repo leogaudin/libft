@@ -6,13 +6,13 @@
 /*   By: lgaudin <lgaudin@student.42malaga.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/28 10:25:16 by lgaudin           #+#    #+#             */
-/*   Updated: 2023/06/28 10:40:33 by lgaudin          ###   ########.fr       */
+/*   Updated: 2023/06/28 10:41:47 by lgaudin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_free_tab(char **tab)
+void	ft_free_tab(char **tab)
 {
 	int	i;
 
